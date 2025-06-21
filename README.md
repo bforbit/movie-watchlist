@@ -1,6 +1,7 @@
 # 🎬 Movie Watchlist App
 
 (Solo project from Scrimba's Working with APIs module)
+
 This app allows users to search for films using the OMDB API and add movies to a watchlist using localStorage.
 
 ## To run the app
