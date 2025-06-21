@@ -13,4 +13,5 @@ This app allows users to search for films using the OMDB API and add movies to a
 ### Additional info
 
 Project started: June 3, 2025
+
 Project completed: June 21, 2025
