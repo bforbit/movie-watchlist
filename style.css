@@ -1,0 +1,283 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Inter", sans-serif;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+/* BANNER HEADER */
+
+header {
+   background-color: black;
+   height: 300px;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.banner {
+   opacity: 0.3;
+   position: absolute;
+   height: 300px;
+   width: 100%;
+}
+
+header h1, h3 {
+   position: relative;
+}
+
+header h1 {
+   font-size: 2.625rem;
+}
+
+header h3 {
+   font-size: 0.875rem;
+}
+
+header h3 a {
+   color: white;
+}
+
+/* SEARCH */
+
+.search {
+   position: relative;
+   margin-top: -18px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#search-input, #search-btn {
+   border: 1px solid #D1D5DB;
+}
+
+#search-input {
+   height: 38px;
+   width: 350px;
+   border-radius: 10px 0 0 10px;
+   color: #6B7280;
+}
+
+.search-box {
+   position: relative;
+}
+
+.search-box img {
+   position: absolute;
+   height: 38%;
+   padding: 12px 0 0 9px;
+   opacity: 0.6;
+}
+
+.search-box input {
+   padding-left: 32px;
+}
+
+#search-btn {
+   height: 42px;
+   width: 120px;
+   border-radius: 0 10px 10px 0;
+   color: #374151;
+   cursor: pointer;
+}
+
+/* SEARCH CYCLES */
+
+.search-pre {
+   display: block;
+   position: absolute;
+   top: 65%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 1.125rem;
+   font-weight: bold;
+   text-align: center;
+   color: #DFDDDD;
+}
+
+.search-pre p {
+   margin-top: 5px;
+}
+
+.search-error {
+   display: none;
+   position: absolute;
+   top: 65%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 1.125rem;
+   font-weight: bold;
+   text-align: center;
+   color: #DFDDDD;
+   width: 320px;
+}
+
+/* MOVIE RESULTS, POSTER */
+
+.movie-result {
+   display: flex;
+   align-items: center;
+   margin: 25px 15%;
+   border-bottom: 1.5px solid #E5E7EB;
+}
+
+.movie-poster img {
+   height: 150px;
+   width: 100px;
+   margin: auto 0;
+   padding-right: 25px;
+   padding-bottom: 15px;
+}
+
+/* MOVIE RESULTS, ROW 1 */
+
+.movie-row1 {
+   display: flex;
+   align-items: center;
+   margin-bottom: 15px;
+}
+
+.movie-title {
+   font-size: 1.125rem;
+   font-weight: 500;
+   padding-right: 10px;
+}
+
+.movie-rating {
+   font-size: 0.75rem;
+}
+
+.movie-rating img {
+   padding-right: 2px;
+}
+
+/* MOVIE RESULTS, ROW 2 */
+
+.movie-row2 {
+   display: flex;
+   align-items: center;
+   margin-bottom: 15px;
+   font-size: 0.75rem;
+}
+
+.movie-runtime, .movie-genres {
+   padding-right: 15px;
+}
+
+.add-watchlist {
+   display: flex;
+   justify-content: center;
+   background-color: white;
+   border: none;
+   cursor: pointer;
+}
+
+.add-watchlist img {
+   height: 16px;
+   margin-right: 4px;
+}
+
+/* MOVIE RESULTS, ROW 3 */
+
+.movie-row3 {
+   display: flex;
+   padding-bottom: 15px;
+}
+
+.movie-plot {
+   font-size: 0.875rem;
+   color: #6B7280;
+   line-height: 20px;
+}
+
+/* WATCHLIST PAGE */
+
+.watchlist-pre {
+   display: block;
+   position: absolute;
+   top: 55%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+.watchlist-add-statement-1, .watchlist-add-statement-2 {
+   font-weight: bold;
+}
+
+.watchlist-add-statement-1 {
+   font-size: 1.125rem;
+   color: #DFDDDD;
+}
+
+.watchlist-add-statement-2 {
+   font-size: 0.875rem;
+   display: flex;
+   justify-content: center;
+   margin-top: 25px;
+}
+
+.watchlist-add-statement-2 a {
+   color: #363636;
+}
+
+.watchlist-add-statement-2 img {
+   height: 18px;
+   padding-right: 5px;
+}
+
+.remove-watchlist {
+   display: flex;
+   justify-content: center;
+   background-color: white;
+   border: none;
+   cursor: pointer;
+}
+
+.remove-watchlist img {
+   height: 16px;
+   margin-right: 4px;
+}
+
+/* MEDIA QUERY */
+
+@media(max-width: 768px) {
+   header {
+      flex-direction: column;
+      justify-content: center;
+   }
+   
+   .movie-result {
+      margin: 30px 15px;
+   }
+   
+   .movie-result, .movie-row1, .movie-row2 {
+      flex-direction: column;
+   }
+   
+   header, .movie-title {
+      text-align: center;
+   }
+   
+   .movie-rating {
+      margin-top: 15px;
+      margin-left: -20px;
+   }
+   
+   .add-watchlist, .remove-watchlist {
+      margin-top: 20px;
+   }
+
+   .movie-plot {
+      margin: 0 25px;
+   }
+}

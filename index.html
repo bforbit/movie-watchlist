@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet">
+   <title>Movie Watchlist</title>
+</head>
+
+<body>
+   <header>
+      <img src="banner.jpg" class="banner">
+      <h1>Find your film</h1>
+      <h3><a href="watchlist.html">My Watchlist</a></h3>
+   </header>
+
+   <div class="search">
+      <div class="search-box">
+         <img src="icon-search.png">
+         <input type="text" id="search-input" placeholder="Search for a movie"/>
+      </div>
+
+      <button id="search-btn">Search</button>
+   </div>
+   
+<!-- SEARCH CYCLES -->
+ 
+   <div id="search-pre" class="search-pre">
+      <img src="icon-exploring.png">
+      <p>Start exploring</p>
+   </div>
+
+   <div id="search-error" class="search-error" id="search-error">
+      <p>Unable to find what you're looking for. Please try another search.</p>
+   </div>
+
+   <div id="search-results" class="search-results"></div>
+
+<script src="script.js" type="module"></script>
+</body>
+</html>
